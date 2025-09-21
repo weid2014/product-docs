@@ -1,0 +1,9 @@
+@echo off
+echo 启动产品说明文档系统...
+echo.
+echo 正在安装依赖...
+call npm install
+echo.
+echo 启动开发服务器...
+call npm run dev
+pause
