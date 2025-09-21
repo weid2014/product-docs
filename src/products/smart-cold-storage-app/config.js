@@ -133,9 +133,10 @@ export const smartColdStorageConfig = {
         '    * 各类别占比分析',
         '    * 种类趋势变化',
         '数据可视化：',
-        '  - 图表展示：饼图',
+        '  - 图表展示：柱状图、饼图、折线图',
         '  - 颜色编码：不同状态用不同颜色区分',
         '  - 交互功能：点击查看详细信息',
+        '  - 导出功能：支持Excel和PDF格式'
       ],
       image: '/images/smart-cold-storage/reports-dashboard.svg',
       screenshots: [
