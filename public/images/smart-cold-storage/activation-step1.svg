@@ -1,0 +1,38 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#f5f5f5"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="150" y="35" text-anchor="middle" fill="white" font-size="18" font-weight="bold">激活页面 - Step 1</text>
+  
+  <!-- Token输入区域 -->
+  <rect x="20" y="80" width="260" height="120" fill="white" stroke="#ddd" stroke-width="1" rx="8"/>
+  <text x="30" y="105" fill="#333" font-size="14" font-weight="bold">输入激活令牌(Token)</text>
+  <text x="30" y="125" fill="#666" font-size="12">请输入24位系统生成的令牌</text>
+  
+  <!-- Token输入框 -->
+  <rect x="30" y="135" width="240" height="35" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="4"/>
+  <text x="40" y="155" fill="#999" font-size="12">XXXX-XXXX-XXXX-XXXX-XXXX-XX</text>
+  
+  <!-- 提示信息 -->
+  <text x="30" y="185" fill="#888" font-size="11">* 可联系售后获取激活令牌</text>
+  
+  <!-- 下一步按钮 -->
+  <rect x="80" y="220" width="140" height="40" fill="#4A90E2" rx="20"/>
+  <text x="150" y="245" text-anchor="middle" fill="white" font-size="14" font-weight="bold">下一步</text>
+  
+  <!-- 底部说明 -->
+  <rect x="20" y="280" width="260" height="80" fill="#fff3cd" stroke="#ffeaa7" stroke-width="1" rx="6"/>
+  <text x="30" y="300" fill="#856404" font-size="12" font-weight="bold">使用说明：</text>
+  <text x="30" y="318" fill="#856404" font-size="11">1. 输入完整的24位令牌</text>
+  <text x="30" y="334" fill="#856404" font-size="11">2. 确保网络连接正常</text>
+  <text x="30" y="350" fill="#856404" font-size="11">3. 点击下一步进行验证</text>
+</svg>

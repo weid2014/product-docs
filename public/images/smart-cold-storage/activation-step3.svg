@@ -1,0 +1,62 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#f5f5f5"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="150" y="35" text-anchor="middle" fill="white" font-size="18" font-weight="bold">激活页面 - Step 3</text>
+  
+  <!-- 天线配置区域 -->
+  <rect x="20" y="80" width="260" height="280" fill="white" stroke="#ddd" stroke-width="1" rx="8"/>
+  <text x="30" y="105" fill="#333" font-size="14" font-weight="bold">天线配置</text>
+  
+  <!-- IP地址管理 -->
+  <text x="30" y="125" fill="#666" font-size="12">货柜IP地址：</text>
+  <rect x="30" y="130" width="180" height="25" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="35" y="147" fill="#333" font-size="11">192.168.1.190</text>
+  <rect x="220" y="132" width="40" height="21" fill="#dc3545" rx="3"/>
+  <text x="240" y="145" text-anchor="middle" fill="white" font-size="10">删除</text>
+  
+  <!-- 天线设置 -->
+  <text x="30" y="170" fill="#666" font-size="12">天线设置：</text>
+  <rect x="30" y="175" width="80" height="25" fill="#28a745" rx="12"/>
+  <text x="70" y="190" text-anchor="middle" fill="white" font-size="10">连接</text>
+  
+  <rect x="120" y="175" width="60" height="25" fill="#6c757d" rx="3"/>
+  <text x="150" y="190" text-anchor="middle" fill="white" font-size="10">版本号</text>
+  
+  <rect x="190" y="175" width="70" height="25" fill="#17a2b8" rx="3"/>
+  <text x="225" y="190" text-anchor="middle" fill="white" font-size="10">获取功率</text>
+  
+  <!-- 功率设置 -->
+  <text x="30" y="215" fill="#666" font-size="12">天线强度：</text>
+  <rect x="100" y="205" width="60" height="25" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="130" y="220" text-anchor="middle" fill="#333" font-size="11">15</text>
+  
+  <rect x="170" y="207" width="60" height="21" fill="#ffc107" rx="3"/>
+  <text x="200" y="220" text-anchor="middle" fill="white" font-size="10">保存功率</text>
+  
+  <!-- 扫描测试 -->
+  <text x="30" y="250" fill="#666" font-size="12">扫描时长：</text>
+  <rect x="100" y="240" width="50" height="25" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="125" y="255" text-anchor="middle" fill="#333" font-size="11">10</text>
+  <text x="155" y="255" fill="#666" font-size="11">秒</text>
+  
+  <rect x="30" y="275" width="80" height="30" fill="#007bff" rx="15"/>
+  <text x="70" y="295" text-anchor="middle" fill="white" font-size="12">扫描</text>
+  
+  <!-- 扫描结果 -->
+  <rect x="120" y="275" width="140" height="30" fill="#d4edda" stroke="#c3e6cb" stroke-width="1" rx="4"/>
+  <text x="190" y="295" text-anchor="middle" fill="#155724" font-size="11">扫描到5个标签</text>
+  
+  <!-- 完成按钮 -->
+  <rect x="80" y="320" width="140" height="30" fill="#28a745" rx="15"/>
+  <text x="150" y="340" text-anchor="middle" fill="white" font-size="12" font-weight="bold">完成配置</text>
+</svg>

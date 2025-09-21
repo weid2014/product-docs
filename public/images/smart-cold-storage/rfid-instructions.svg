@@ -1,0 +1,55 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#f5f5f5"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="20" y="35" fill="white" font-size="18" font-weight="bold">RFID摆放说明</text>
+  <rect x="220" y="20" width="60" height="20" fill="rgba(255,255,255,0.2)" rx="10"/>
+  <text x="250" y="33" text-anchor="middle" fill="white" font-size="10">返回列表</text>
+  
+  <!-- 说明内容区域 -->
+  <rect x="20" y="80" width="260" height="300" fill="white" stroke="#ddd" stroke-width="1" rx="8"/>
+  
+  <!-- 标题 -->
+  <text x="30" y="105" fill="#333" font-size="14" font-weight="bold">RFID标签应用说明</text>
+  
+  <!-- 重要提示 -->
+  <rect x="30" y="115" width="240" height="40" fill="#f8d7da" stroke="#f5c6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="130" fill="#721c24" font-size="11" font-weight="bold">⚠ 重要提示</text>
+  <text x="40" y="145" fill="#721c24" font-size="10">标签不可直接贴至金属/铝箔包装上</text>
+  
+  <!-- 正确方法 -->
+  <text x="30" y="175" fill="#28a745" font-size="12" font-weight="bold">✓ 正确的标签贴附方法：</text>
+  
+  <!-- 方法1 -->
+  <rect x="30" y="185" width="240" height="35" fill="#d4edda" stroke="#c3e6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="200" fill="#155724" font-size="11">1. 贴在药品外包装盒的非金属面</text>
+  <text x="40" y="212" fill="#155724" font-size="10">   避开铝箔、金属标识等区域</text>
+  
+  <!-- 方法2 -->
+  <rect x="30" y="225" width="240" height="35" fill="#d4edda" stroke="#c3e6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="240" fill="#155724" font-size="11">2. 使用泡沫垫片隔离金属表面</text>
+  <text x="40" y="252" fill="#155724" font-size="10">   在标签与金属间放置隔离材料</text>
+  
+  <!-- 方法3 -->
+  <rect x="30" y="265" width="240" height="35" fill="#d4edda" stroke="#c3e6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="280" fill="#155724" font-size="11">3. 贴在塑料容器或纸质标签上</text>
+  <text x="40" y="292" fill="#155724" font-size="10">   选择非导电材质表面</text>
+  
+  <!-- 错误示例 -->
+  <text x="30" y="320" fill="#dc3545" font-size="12" font-weight="bold">✗ 错误的贴附方式：</text>
+  
+  <rect x="30" y="330" width="240" height="25" fill="#f8d7da" stroke="#f5c6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="345" fill="#721c24" font-size="10">• 直接贴在铝箔包装上</text>
+  
+  <rect x="30" y="360" width="240" height="25" fill="#f8d7da" stroke="#f5c6cb" stroke-width="1" rx="4"/>
+  <text x="40" y="375" fill="#721c24" font-size="10">• 贴在金属容器表面</text>
+</svg>

@@ -1,0 +1,154 @@
+<svg width="300" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44A08D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scanAnim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="500" fill="url(#headerGrad)"/>
+  
+  <!-- 顶部功能按键区域 -->
+  <rect x="10" y="10" width="80" height="40" fill="rgba(255,255,255,0.9)" stroke="#ddd" stroke-width="1" rx="8"/>
+  <text x="50" y="25" text-anchor="middle" fill="#4ECDC4" font-size="10">📊</text>
+  <text x="50" y="38" text-anchor="middle" fill="#4ECDC4" font-size="10" font-weight="bold">报表</text>
+  
+  <rect x="110" y="10" width="80" height="40" fill="rgba(255,255,255,0.9)" stroke="#ddd" stroke-width="1" rx="8"/>
+  <text x="150" y="25" text-anchor="middle" fill="#4ECDC4" font-size="10">▶️</text>
+  <text x="150" y="38" text-anchor="middle" fill="#4ECDC4" font-size="10" font-weight="bold">盘点</text>
+  
+  <rect x="210" y="10" width="80" height="40" fill="rgba(255,255,255,0.9)" stroke="#ddd" stroke-width="1" rx="8"/>
+  <text x="250" y="25" text-anchor="middle" fill="#4ECDC4" font-size="10">📋</text>
+  <text x="250" y="38" text-anchor="middle" fill="#4ECDC4" font-size="10" font-weight="bold">列表</text>
+  
+  <!-- 扫描动画指示器 -->
+  <circle cx="270" cy="70" r="6" fill="url(#scanAnim)"/>
+  <text x="270" y="85" text-anchor="middle" fill="white" font-size="8">正在扫描中</text>
+  
+  <!-- 标题区域 -->
+  <text x="150" y="75" text-anchor="middle" fill="white" font-size="16" font-weight="bold">金域医学</text>
+  <text x="150" y="90" text-anchor="middle" fill="white" font-size="10">KingMed Diagnostics</text>
+  <text x="150" y="105" text-anchor="middle" fill="white" font-size="8">智能冷库自动盘点用药创建版本号: OUT20250921.9JSE</text>
+  
+  <!-- 显示选项 -->
+  <rect x="20" y="120" width="15" height="15" fill="white" rx="2"/>
+  <text x="27" y="132" text-anchor="middle" fill="#4ECDC4" font-size="10">✓</text>
+  <text x="45" y="132" fill="white" font-size="12">显示物料全名</text>
+  
+  <!-- 统计信息 -->
+  <text x="20" y="155" fill="white" font-size="12">常规存储区</text>
+  <text x="250" y="155" fill="white" font-size="12">共931个</text>
+  
+  <!-- 物料状态图例 -->
+  <circle cx="30" cy="175" r="4" fill="#dc3545"/>
+  <text x="40" y="179" fill="white" font-size="9">过期物料</text>
+  
+  <circle cx="100" cy="175" r="4" fill="#ffc107"/>
+  <text x="110" y="179" fill="white" font-size="9">过期物料</text>
+  
+  <circle cx="170" cy="175" r="4" fill="#fd7e14"/>
+  <text x="180" y="179" fill="white" font-size="9">三十天内过期物料</text>
+  
+  <circle cx="30" cy="195" r="4" fill="#17a2b8"/>
+  <text x="40" y="199" fill="white" font-size="9">正常物料(置入超过30天物料)</text>
+  
+  <!-- 物料网格区域 -->
+  <g transform="translate(10, 210)">
+    <!-- 第一行 -->
+    <rect x="0" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="17" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="17" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="17" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <rect x="40" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="57" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="57" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="57" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <rect x="80" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="97" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="97" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="97" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <rect x="120" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="137" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="137" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="137" y="32" text-anchor="middle" fill="white" font-size="6">Column2</text>
+    
+    <rect x="160" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="177" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="177" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="177" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <rect x="200" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="217" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="217" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="217" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <rect x="240" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+    <text x="257" y="15" text-anchor="middle" fill="white" font-size="7">OR:46.150.0510</text>
+    <text x="257" y="25" text-anchor="middle" fill="white" font-size="6">Obsolete R</text>
+    <text x="257" y="32" text-anchor="middle" fill="white" font-size="6">Column</text>
+    
+    <!-- 数量标签 -->
+    <text x="17" y="50" text-anchor="middle" fill="white" font-size="8">38 箱</text>
+    <text x="57" y="50" text-anchor="middle" fill="white" font-size="8">19 箱</text>
+    <text x="97" y="50" text-anchor="middle" fill="white" font-size="8">696 箱</text>
+    <text x="137" y="50" text-anchor="middle" fill="white" font-size="8">1 箱</text>
+    <text x="177" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+    <text x="217" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+    <text x="257" y="50" text-anchor="middle" fill="white" font-size="8">1 箱</text>
+    
+    <!-- 第二行 -->
+    <g transform="translate(0, 60)">
+      <rect x="0" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="40" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="80" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="120" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="160" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="200" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="240" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      
+      <text x="17" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="57" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="97" y="50" text-anchor="middle" fill="white" font-size="8">3 箱</text>
+      <text x="137" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="177" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="217" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="257" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+    </g>
+    
+    <!-- 第三行 -->
+    <g transform="translate(0, 120)">
+      <rect x="0" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="40" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="80" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="120" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="160" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="200" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      <rect x="240" y="0" width="35" height="35" fill="#dc3545" rx="2"/>
+      
+      <text x="17" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="57" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="97" y="50" text-anchor="middle" fill="white" font-size="8">3 箱</text>
+      <text x="137" y="50" text-anchor="middle" fill="white" font-size="8">4 箱</text>
+      <text x="177" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="217" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+      <text x="257" y="50" text-anchor="middle" fill="white" font-size="8">2 箱</text>
+    </g>
+  </g>
+  
+  <!-- 底部导航栏 -->
+  <rect x="0" y="460" width="300" height="40" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="50" cy="480" r="8" fill="#4ECDC4"/>
+  <circle cx="100" cy="480" r="8" fill="#ffc107"/>
+  <circle cx="150" cy="480" r="8" fill="#28a745"/>
+  <circle cx="200" cy="480" r="8" fill="#17a2b8"/>
+  <circle cx="250" cy="480" r="8" fill="#dc3545"/>
+</svg>

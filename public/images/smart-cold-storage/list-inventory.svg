@@ -1,0 +1,72 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#f5f5f5"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="20" y="35" fill="white" font-size="18" font-weight="bold">详细列表</text>
+  <rect x="220" y="20" width="60" height="20" fill="rgba(255,255,255,0.2)" rx="10"/>
+  <text x="250" y="33" text-anchor="middle" fill="white" font-size="10">返回首页</text>
+  
+  <!-- 子页面切换标签 -->
+  <rect x="20" y="70" width="260" height="40" fill="white" stroke="#ddd" stroke-width="1" rx="6"/>
+  <rect x="30" y="80" width="70" height="20" fill="#007bff" rx="10"/>
+  <text x="65" y="92" text-anchor="middle" fill="white" font-size="10">库存列表</text>
+  
+  <rect x="110" y="80" width="70" height="20" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="10"/>
+  <text x="145" y="92" text-anchor="middle" fill="#6c757d" font-size="10">领用记录</text>
+  
+  <rect x="190" y="80" width="70" height="20" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="10"/>
+  <text x="225" y="92" text-anchor="middle" fill="#6c757d" font-size="10">设置</text>
+  
+  <!-- 搜索框 -->
+  <rect x="20" y="120" width="200" height="30" fill="white" stroke="#ccc" stroke-width="1" rx="4"/>
+  <text x="30" y="138" fill="#999" font-size="12">搜索物料名称...</text>
+  
+  <rect x="230" y="122" width="50" height="26" fill="#28a745" rx="4"/>
+  <text x="255" y="138" text-anchor="middle" fill="white" font-size="10">搜索</text>
+  
+  <!-- 排序选项 -->
+  <text x="20" y="170" fill="#666" font-size="12">排序方式：按效期排序 ↓</text>
+  
+  <!-- 物料列表 -->
+  <rect x="20" y="180" width="260" height="160" fill="white" stroke="#ddd" stroke-width="1" rx="6"/>
+  
+  <!-- 列表项1 -->
+  <rect x="25" y="185" width="250" height="35" fill="#fff3cd" stroke="#ffeaa7" stroke-width="1" rx="3"/>
+  <text x="30" y="200" fill="#856404" font-size="11" font-weight="bold">头孢克肟片 100mg</text>
+  <text x="30" y="212" fill="#856404" font-size="9">批号: 20240115 | 厂家: XX制药 | 效期: 2024-03-20</text>
+  <text x="240" y="205" text-anchor="middle" fill="#856404" font-size="10">库存: 50盒</text>
+  
+  <!-- 列表项2 -->
+  <rect x="25" y="225" width="250" height="35" fill="white" stroke="#dee2e6" stroke-width="1" rx="3"/>
+  <text x="30" y="240" fill="#333" font-size="11" font-weight="bold">阿莫西林胶囊 250mg</text>
+  <text x="30" y="252" fill="#666" font-size="9">批号: 20240201 | 厂家: YY药业 | 效期: 2024-08-15</text>
+  <text x="240" y="245" text-anchor="middle" fill="#333" font-size="10">库存: 120盒</text>
+  
+  <!-- 列表项3 -->
+  <rect x="25" y="265" width="250" height="35" fill="#cce7ff" stroke="#b3d9ff" stroke-width="1" rx="3"/>
+  <text x="30" y="280" fill="#004085" font-size="11" font-weight="bold">维生素B12注射液</text>
+  <text x="30" y="292" fill="#004085" font-size="9">批号: 20231101 | 厂家: ZZ医药 | 入库: 2023-11-01</text>
+  <text x="240" y="285" text-anchor="middle" fill="#004085" font-size="10">库存: 30支</text>
+  
+  <!-- 列表项4 -->
+  <rect x="25" y="305" width="250" height="35" fill="white" stroke="#dee2e6" stroke-width="1" rx="3"/>
+  <text x="30" y="320" fill="#333" font-size="11" font-weight="bold">生理盐水 250ml</text>
+  <text x="30" y="332" fill="#666" font-size="9">批号: 20240210 | 厂家: AA制药 | 效期: 2025-02-10</text>
+  <text x="240" y="325" text-anchor="middle" fill="#333" font-size="10">库存: 200袋</text>
+  
+  <!-- 摆放说明按钮 -->
+  <rect x="20" y="350" width="80" height="30" fill="#17a2b8" rx="4"/>
+  <text x="60" y="370" text-anchor="middle" fill="white" font-size="11">摆放说明</text>
+  
+  <!-- 分页信息 -->
+  <text x="150" y="370" fill="#6c757d" font-size="10">第1页，共3页 | 总计156件</text>
+</svg>
