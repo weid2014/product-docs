@@ -1,0 +1,59 @@
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 手机外框 -->
+  <rect x="20" y="20" width="260" height="460" rx="25" ry="25" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- 屏幕 -->
+  <rect x="30" y="60" width="240" height="380" rx="10" ry="10" fill="#34495e"/>
+  
+  <!-- 标题栏 -->
+  <text x="40" y="85" fill="white" font-size="16">←</text>
+  <text x="60" y="85" fill="white" font-size="14">选择领用物料</text>
+  <text x="220" y="85" fill="white" font-size="14">清空 ✕</text>
+  
+  <!-- 搜索栏 -->
+  <rect x="40" y="100" width="30" height="25" rx="3" fill="#2c3e50" stroke="#34495e"/>
+  <text x="55" y="115" text-anchor="middle" fill="white" font-size="12">📱</text>
+  
+  <rect x="80" y="100" width="90" height="25" rx="3" fill="#2c3e50" stroke="#34495e"/>
+  <text x="85" y="115" fill="#95a5a6" font-size="10">请输入名称</text>
+  
+  <rect x="180" y="100" width="90" height="25" rx="3" fill="#1abc9c" stroke="#16a085"/>
+  <text x="185" y="115" fill="white" font-size="10">请输入编码</text>
+  
+  <rect x="280" y="100" width="30" height="25" rx="3" fill="#2c3e50" stroke="#34495e"/>
+  <text x="295" y="115" text-anchor="middle" fill="white" font-size="12">🔍</text>
+  
+  <!-- 统计信息 -->
+  <text x="150" y="145" text-anchor="middle" fill="white" font-size="12">共:371条</text>
+  
+  <!-- 物料列表 -->
+  <!-- 第一个物料 -->
+  <rect x="40" y="160" width="220" height="80" rx="5" fill="#2c3e50" stroke="#34495e"/>
+  <text x="50" y="175" fill="white" font-size="9">物料名称:6C37.09 丙型肝炎病毒抗体检测试剂准品 (原货号6C37.01)</text>
+  <text x="50" y="188" fill="#95a5a6" font-size="8">物料编码:01.03.0011.20059.00001</text>
+  <text x="50" y="201" fill="#95a5a6" font-size="8">生产厂家:Abbott/雅培医疗诊断产品有限公司</text>
+  <text x="50" y="214" fill="#95a5a6" font-size="8">物料规格:1*4ml</text>
+  <text x="50" y="227" fill="#95a5a6" font-size="8">物料编号:68345BE01    有效日期:2025-09-04</text>
+  <text x="180" y="227" fill="#95a5a6" font-size="8">物料库存:0.1盒</text>
+  
+  <rect x="50" y="235" width="200" height="20" rx="3" fill="#2c3e50" stroke="#34495e"/>
+  <text x="60" y="247" fill="#95a5a6" font-size="9">领用数量:</text>
+  <text x="120" y="247" fill="#95a5a6" font-size="9">请输入数量</text>
+  
+  <!-- 第二个物料 -->
+  <rect x="40" y="270" width="220" height="80" rx="5" fill="#2c3e50" stroke="#34495e"/>
+  <text x="50" y="285" fill="white" font-size="9">物料名称:骨源性碱性磷酸酶检测试剂盒 (凝集素亲和法)</text>
+  <text x="50" y="298" fill="#95a5a6" font-size="8">物料编码:01.02.0006.10002.00001</text>
+  <text x="50" y="311" fill="#95a5a6" font-size="8">生产厂家:北京中生金域诊断技术股份有限公司</text>
+  <text x="50" y="324" fill="#95a5a6" font-size="8">物料规格:JY-Color-BAP NB 50人份/盒</text>
+  <text x="50" y="337" fill="#95a5a6" font-size="8">物料编号:01240904    有效日期:2025-09-13</text>
+  <text x="180" y="337" fill="#95a5a6" font-size="8">物料库存:0.12盒</text>
+  
+  <rect x="50" y="345" width="200" height="20" rx="3" fill="#2c3e50" stroke="#34495e"/>
+  <text x="60" y="357" fill="#95a5a6" font-size="9">领用数量:</text>
+  <text x="120" y="357" fill="#95a5a6" font-size="9">请输入数量</text>
+  
+  <!-- 底部按钮 -->
+  <rect x="70" y="400" width="160" height="30" rx="5" fill="#1abc9c"/>
+  <text x="150" y="418" text-anchor="middle" fill="white" font-size="12">创建院内领用单</text>
+</svg>

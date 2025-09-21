@@ -6,10 +6,16 @@
         <button 
           v-for="category in categories" 
           :key="category"
-          :class="['nav-item', { active: activeCategory === category }]"
-          @click="selectCategory(category)"
+          :class="['nav-item', { 
+            active: activeCategory === category,
+            collapsed: collapsedCategories.includes(category)
+          }]"
+          @click="toggleCategory(category)"
         >
-          {{ category }}
+          <span class="category-text">{{ category }}</span>
+          <span class="collapse-icon">
+            {{ collapsedCategories.includes(category) ? '▶' : '▼' }}
+          </span>
         </button>
       </nav>
     </div>
@@ -23,19 +29,37 @@ const props = defineProps({
   categories: Array
 })
 
-const emit = defineEmits(['category-change'])
+const emit = defineEmits(['category-change', 'category-toggle'])
 
 const activeCategory = ref('APP软件')
+const collapsedCategories = ref([])
 
-const selectCategory = (category) => {
+const toggleCategory = (category) => {
+  // 切换折叠状态
+  const index = collapsedCategories.value.indexOf(category)
+  if (index > -1) {
+    // 展开分类
+    collapsedCategories.value.splice(index, 1)
+  } else {
+    // 折叠分类
+    collapsedCategories.value.push(category)
+  }
+  
+  // 设置当前活跃分类
   activeCategory.value = category
+  
+  // 发送事件给父组件
   emit('category-change', category)
+  emit('category-toggle', {
+    category,
+    collapsed: collapsedCategories.value.includes(category)
+  })
 }
 </script>
 
 <style scoped>
 .header {
-  background: linear-gradient(135deg, #ff4757, #ff3838);
+  background: linear-gradient(135deg, #2196F3, #1976D2);
   color: white;
   height: 60px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -62,7 +86,7 @@ const selectCategory = (category) => {
 }
 
 .nav-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(173, 216, 230, 0.3);
   border: none;
   color: white;
   padding: 8px 16px;
@@ -70,14 +94,46 @@ const selectCategory = (category) => {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 100px;
+  justify-content: space-between;
 }
 
 .nav-item:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(173, 216, 230, 0.5);
 }
 
 .nav-item.active {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(173, 216, 230, 0.7);
   font-weight: bold;
+}
+
+.nav-item.collapsed {
+  background: rgba(173, 216, 230, 0.2);
+}
+
+.nav-item.collapsed:hover {
+  background: rgba(173, 216, 230, 0.4);
+}
+
+.category-text {
+  flex: 1;
+  text-align: left;
+}
+
+.collapse-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item.collapsed .collapse-icon {
+  transform: rotate(0deg);
+}
+
+.nav-item:not(.collapsed) .collapse-icon {
+  transform: rotate(0deg);
 }
 </style>

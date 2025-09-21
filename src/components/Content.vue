@@ -43,7 +43,7 @@
             </div>
             
             <button class="back-btn" @click="collapseFeature(index)">
-              返回
+              折叠
             </button>
           </div>
         </div>
@@ -206,6 +206,9 @@ watch(() => props.product, () => {
   font-size: 14px;
   margin-top: 15px;
   transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .back-btn:hover {
