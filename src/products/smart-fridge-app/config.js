@@ -112,11 +112,11 @@ export const smartFridgeConfig = {
       title: '3. 报表页面',
       priority: 'medium',
       status: 'stable',
-      description: 'BI报表分析页面，直观展示物料统计信息和趋势分析。',
+      description: 'BI报表分析页面，直观展示物料统计信息。',
       technicalSpecs: {
         chartTypes: 'ECharts图表库',
         dataRefresh: '实时数据刷新',
-        exportFormat: 'Excel, PDF导出'
+        exportFormat: ''
       },
       details: [
         'BI报表功能：',
@@ -136,12 +136,10 @@ export const smartFridgeConfig = {
         '  - 物料种类统计：',
         '    * 物料分类信息',
         '    * 各类别占比分析',
-        '    * 种类趋势变化',
         '数据可视化：',
-        '  - 图表展示：柱状图、饼图、折线图',
+        '  - 图表展示：饼图',
         '  - 颜色编码：不同状态用不同颜色区分',
         '  - 交互功能：点击查看详细信息',
-        '  - 导出功能：支持Excel和PDF格式'
       ],
       image: '/images/smart-fridge/reports-dashboard.svg',
       screenshots: [

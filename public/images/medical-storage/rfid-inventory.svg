@@ -1,0 +1,56 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#ecf0f1"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="20" y="35" fill="white" font-size="16" font-weight="bold">清远市中医院</text>
+  
+  <!-- 返回按钮 -->
+  <path d="M 260 25 L 270 30 L 260 35 L 260 32 L 275 32 L 275 28 L 260 28 Z" fill="white"/>
+  
+  <!-- 当前选中的盘点单 -->
+  <rect x="20" y="80" width="260" height="40" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="6"/>
+  <text x="30" y="100" fill="white" font-size="12" font-weight="bold">盘点单(49)_2025-04-24 12:50:32</text>
+  
+  <!-- 历史盘点单列表 -->
+  <rect x="20" y="130" width="260" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+  <text x="30" y="150" fill="#2c3e50" font-size="12">盘点单(48)_2025-04-24 12:13:06</text>
+  
+  <rect x="20" y="170" width="260" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+  <text x="30" y="190" fill="#2c3e50" font-size="12">盘点单(47)_2025-04-15 10:07:17</text>
+  
+  <rect x="20" y="210" width="260" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+  <text x="30" y="230" fill="#2c3e50" font-size="12">盘点单(46)_2025-04-15 09:43:24</text>
+  
+  <rect x="20" y="250" width="260" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+  <text x="30" y="270" fill="#2c3e50" font-size="12">盘点单(45)_2025-04-15 09:30:43</text>
+  
+  <rect x="20" y="290" width="260" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+  <text x="30" y="310" fill="#2c3e50" font-size="12">盘点单(44)_2025-04-14 12:18:01</text>
+  
+  <!-- 新建盘点单弹窗 -->
+  <rect x="60" y="180" width="180" height="80" fill="white" stroke="#34495e" stroke-width="2" rx="8"/>
+  <text x="150" y="205" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">是否停止盘点</text>
+  
+  <!-- 弹窗按钮 -->
+  <rect x="80" y="230" width="50" height="25" fill="#95a5a6" rx="12"/>
+  <text x="105" y="245" text-anchor="middle" fill="white" font-size="11">取消</text>
+  
+  <rect x="150" y="230" width="50" height="25" fill="#27ae60" rx="12"/>
+  <text x="175" y="245" text-anchor="middle" fill="white" font-size="11">确定</text>
+  
+  <!-- 底部功能按钮 -->
+  <rect x="20" y="350" width="120" height="35" fill="#16a085" rx="4"/>
+  <text x="80" y="370" text-anchor="middle" fill="white" font-size="12" font-weight="bold">新建盘点单</text>
+  
+  <rect x="160" y="350" width="120" height="35" fill="#27ae60" rx="4"/>
+  <text x="220" y="370" text-anchor="middle" fill="white" font-size="12" font-weight="bold">开始盘点</text>
+</svg>

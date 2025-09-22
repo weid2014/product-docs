@@ -111,7 +111,7 @@ export const smartColdStorageConfig = {
       technicalSpecs: {
         chartTypes: 'ECharts图表库',
         dataRefresh: '实时数据刷新',
-        exportFormat: 'Excel, PDF导出'
+        exportFormat: ''
       },
       details: [
         'BI报表功能：',
@@ -131,12 +131,10 @@ export const smartColdStorageConfig = {
         '  - 物料种类统计：',
         '    * 物料分类信息',
         '    * 各类别占比分析',
-        '    * 种类趋势变化',
         '数据可视化：',
-        '  - 图表展示：柱状图、饼图、折线图',
+        '  - 图表展示：饼图',
         '  - 颜色编码：不同状态用不同颜色区分',
-        '  - 交互功能：点击查看详细信息',
-        '  - 导出功能：支持Excel和PDF格式'
+        '  - 交互功能：点击查看详细信息'
       ],
       image: '/images/smart-cold-storage/reports-dashboard.svg',
       screenshots: [

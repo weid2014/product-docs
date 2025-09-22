@@ -89,7 +89,9 @@ watch(() => props.product, () => {
 
 .content-wrapper {
   padding: 30px;
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .content-header {

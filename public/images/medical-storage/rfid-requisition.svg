@@ -1,0 +1,70 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="#ecf0f1"/>
+  
+  <!-- 顶部标题栏 -->
+  <rect width="300" height="60" fill="url(#headerGrad)"/>
+  <text x="20" y="35" fill="white" font-size="16" font-weight="bold">清远市中医院</text>
+  
+  <!-- 返回按钮 -->
+  <path d="M 260 25 L 270 30 L 260 35 L 260 32 L 275 32 L 275 28 L 260 28 Z" fill="white"/>
+  
+  <!-- 搜索栏 -->
+  <rect x="20" y="80" width="220" height="35" fill="white" stroke="#3498db" stroke-width="2" rx="4"/>
+  <text x="30" y="100" fill="#2c3e50" font-size="12">请输入批号</text>
+  
+  <!-- 搜索按钮 -->
+  <rect x="250" y="82" width="30" height="31" fill="#3498db" rx="4"/>
+  <text x="265" y="100" text-anchor="middle" fill="white" font-size="12">🔍</text>
+  
+  <!-- 物料信息卡片 -->
+  <rect x="20" y="130" width="260" height="120" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="8"/>
+  <text x="30" y="150" fill="white" font-size="12" font-weight="bold">物料名称:肺炎支原体IgM抗体检测试剂</text>
+  <text x="30" y="165" fill="white" font-size="12" font-weight="bold">(胶体金法)</text>
+  <text x="30" y="185" fill="white" font-size="11">物料编码:06100951</text>
+  <text x="30" y="200" fill="white" font-size="11">批号:2410360520</text>
+  
+  <!-- 勾选框 -->
+  <rect x="30" y="210" width="15" height="15" fill="white" stroke="#2980b9" stroke-width="2" rx="2"/>
+  <text x="37" y="221" text-anchor="middle" fill="#2980b9" font-size="12">✓</text>
+  
+  <text x="50" y="222" fill="white" font-size="11">单价:</text>
+  <text x="30" y="240" fill="white" font-size="11">库位:常温库-门诊-J1-A1-1</text>
+  
+  <!-- 库存信息 -->
+  <text x="200" y="185" fill="white" font-size="11">库存:93 个</text>
+  
+  <!-- 出库应用弹窗 -->
+  <rect x="50" y="270" width="200" height="120" fill="white" stroke="#34495e" stroke-width="2" rx="8"/>
+  <text x="150" y="290" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">出库应用</text>
+  
+  <!-- 操作人选择 -->
+  <text x="60" y="310" fill="#2c3e50" font-size="12">请选择操作人</text>
+  <rect x="60" y="315" width="120" height="20" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="3"/>
+  <text x="70" y="327" fill="#2c3e50" font-size="11">刘首明-1122</text>
+  <text x="170" y="327" fill="#7f8c8d" font-size="11">▼</text>
+  
+  <!-- 用途选择 -->
+  <text x="60" y="350" fill="#2c3e50" font-size="12">请选用途</text>
+  <rect x="60" y="355" width="120" height="20" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="3"/>
+  <text x="70" y="367" fill="#2c3e50" font-size="11">生化室领用</text>
+  <text x="170" y="367" fill="#7f8c8d" font-size="11">▼</text>
+  
+  <!-- 按钮 -->
+  <rect x="70" y="380" width="50" height="25" fill="#95a5a6" rx="12"/>
+  <text x="95" y="395" text-anchor="middle" fill="white" font-size="11">取消</text>
+  
+  <rect x="130" y="380" width="70" height="25" fill="#27ae60" rx="12"/>
+  <text x="165" y="395" text-anchor="middle" fill="white" font-size="11">确认出库</text>
+  
+  <!-- 下一步按钮 -->
+  <rect x="20" y="410" width="260" height="35" fill="#16a085" rx="4"/>
+  <text x="150" y="430" text-anchor="middle" fill="white" font-size="14" font-weight="bold">下一步</text>
+</svg>

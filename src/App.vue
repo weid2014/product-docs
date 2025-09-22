@@ -77,5 +77,8 @@ activeProduct.value = currentProducts.value[0] || null
   display: flex;
   flex: 1;
   height: calc(100vh - 60px);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 </style>
