@@ -1,0 +1,74 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- 顶部状态栏 -->
+  <text x="20" y="25" fill="white" font-size="12">12:07</text>
+  <text x="250" y="25" fill="white" font-size="12">📶📶🔋</text>
+  
+  <!-- 返回按钮和标题 -->
+  <path d="M 30 45 L 40 50 L 30 55 L 30 52 L 25 52 L 25 48 L 30 48 Z" fill="white"/>
+  <text x="150" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">请选择盘点单</text>
+  
+  <!-- 盘点单列表 -->
+  <!-- 盘点单1 -->
+  <rect x="20" y="80" width="260" height="60" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="100" fill="white" font-size="12" font-weight="bold">广州金域非销售仓(2024-05-11)</text>
+  <text x="30" y="115" fill="rgba(255,255,255,0.8)" font-size="10">盘点号：INVENTORY-20240815004</text>
+  <text x="30" y="128" fill="rgba(255,255,255,0.8)" font-size="10">开始盘点：24-08-26 11:37</text>
+  <text x="30" y="140" fill="rgba(255,255,255,0.8)" font-size="10">最后更新：24-08-29 14:11</text>
+  
+  <text x="220" y="100" fill="#16a085" font-size="10">盘点:0</text>
+  <text x="220" y="112" fill="#f39c12" font-size="10">目视:70</text>
+  <text x="220" y="124" fill="#3498db" font-size="10">EAS:90</text>
+  <text x="220" y="136" fill="#27ae60" font-size="10">状态:已开始</text>
+  
+  <!-- 盘点单2 -->
+  <rect x="20" y="150" width="260" height="60" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="170" fill="white" font-size="12" font-weight="bold">广州金域非销售仓(2024-05-11)</text>
+  <text x="30" y="185" fill="rgba(255,255,255,0.8)" font-size="10">盘点号：INVENTORY-20240815005</text>
+  <text x="30" y="198" fill="rgba(255,255,255,0.8)" font-size="10">开始盘点：24-08-15 15:17</text>
+  <text x="30" y="210" fill="rgba(255,255,255,0.8)" font-size="10">最后更新：24-08-15 16:29</text>
+  
+  <text x="220" y="170" fill="#16a085" font-size="10">盘点:0</text>
+  <text x="220" y="182" fill="#f39c12" font-size="10">目视:20</text>
+  <text x="220" y="194" fill="#3498db" font-size="10">EAS:90</text>
+  <text x="220" y="206" fill="#27ae60" font-size="10">状态:已开始</text>
+  
+  <!-- 盘点单3 -->
+  <rect x="20" y="220" width="260" height="50" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="240" fill="white" font-size="12" font-weight="bold">广州金域非销售仓(2024-05-11)</text>
+  <text x="30" y="255" fill="rgba(255,255,255,0.8)" font-size="10">盘点号：INVENTORY-20240815003</text>
+  <text x="30" y="268" fill="rgba(255,255,255,0.8)" font-size="10">最后更新：24-08-15 15:13</text>
+  
+  <text x="220" y="240" fill="#16a085" font-size="10">盘点:0</text>
+  <text x="220" y="252" fill="#3498db" font-size="10">EAS:90</text>
+  <text x="220" y="264" fill="#e74c3c" font-size="10">状态:未确认</text>
+  
+  <!-- 盘点单4 -->
+  <rect x="20" y="280" width="260" height="50" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="300" fill="white" font-size="12" font-weight="bold">广州金域非销售仓(2024-05-11)</text>
+  <text x="30" y="315" fill="rgba(255,255,255,0.8)" font-size="10">盘点号：INVENTORY-20240815002</text>
+  <text x="30" y="328" fill="rgba(255,255,255,0.8)" font-size="10">最后更新：24-08-15 15:13</text>
+  
+  <text x="220" y="300" fill="#16a085" font-size="10">盘点:0</text>
+  <text x="220" y="312" fill="#3498db" font-size="10">EAS:90</text>
+  <text x="220" y="324" fill="#e74c3c" font-size="10">状态:未确认</text>
+  
+  <!-- 盘点单5 -->
+  <rect x="20" y="340" width="260" height="50" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="360" fill="white" font-size="12" font-weight="bold">广州金域非销售仓(2024-05-11)</text>
+  <text x="30" y="375" fill="rgba(255,255,255,0.8)" font-size="10">盘点号：INVENTORY-20240815001</text>
+  <text x="30" y="388" fill="rgba(255,255,255,0.8)" font-size="10">最后更新：24-08-15 15:12</text>
+  
+  <text x="220" y="360" fill="#16a085" font-size="10">盘点:0</text>
+  <text x="220" y="372" fill="#3498db" font-size="10">EAS:90</text>
+  <text x="220" y="384" fill="#e74c3c" font-size="10">状态:未确认</text>
+</svg>

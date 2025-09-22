@@ -1,0 +1,70 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- 顶部状态栏 -->
+  <text x="20" y="25" fill="white" font-size="12">11:52</text>
+  <text x="250" y="25" fill="white" font-size="12">📶📶🔋</text>
+  
+  <!-- 金域医学Logo区域 -->
+  <rect x="50" y="60" width="200" height="120" fill="rgba(255,255,255,0.1)" rx="8"/>
+  
+  <!-- Logo图标 -->
+  <polygon points="150,80 160,90 150,100 140,90" fill="white"/>
+  <text x="150" y="120" text-anchor="middle" fill="white" font-size="18" font-weight="bold">金域医学</text>
+  <text x="150" y="140" text-anchor="middle" fill="white" font-size="12">KingMed Diagnostics</text>
+  
+  <!-- 仓库物料插图 -->
+  <rect x="80" y="160" width="140" height="80" fill="rgba(255,255,255,0.2)" rx="6"/>
+  <rect x="90" y="170" width="15" height="15" fill="#f39c12"/>
+  <rect x="110" y="170" width="15" height="15" fill="#e67e22"/>
+  <rect x="130" y="170" width="15" height="15" fill="#d35400"/>
+  <rect x="90" y="190" width="15" height="15" fill="#3498db"/>
+  <rect x="110" y="190" width="15" height="15" fill="#2980b9"/>
+  <rect x="130" y="190" width="15" height="15" fill="#1abc9c"/>
+  <rect x="90" y="210" width="15" height="15" fill="#27ae60"/>
+  <rect x="110" y="210" width="15" height="15" fill="#16a085"/>
+  <rect x="130" y="210" width="15" height="15" fill="#f1c40f"/>
+  
+  <!-- 工作人员图标 -->
+  <circle cx="180" cy="200" r="12" fill="#34495e"/>
+  <rect x="175" y="210" width="10" height="20" fill="#2c3e50"/>
+  <rect x="170" y="215" width="20" height="3" fill="#95a5a6"/>
+  
+  <!-- PDA编号输入 -->
+  <rect x="30" y="260" width="240" height="35" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1" rx="4"/>
+  <text x="40" y="275" fill="rgba(255,255,255,0.7)" font-size="11">请输入 PDA编号</text>
+  <text x="40" y="290" fill="white" font-size="12">EA0000000000000002</text>
+  
+  <!-- PDA密码输入 -->
+  <rect x="30" y="305" width="240" height="35" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1" rx="4"/>
+  <text x="40" y="320" fill="rgba(255,255,255,0.7)" font-size="11">请输入 PDA密码</text>
+  <text x="40" y="335" fill="white" font-size="12">123456</text>
+  
+  <!-- 子公司仓库 -->
+  <rect x="30" y="350" width="240" height="35" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1" rx="4"/>
+  <text x="40" y="365" fill="rgba(255,255,255,0.7)" font-size="11">子公司仓库，如：广州生物岛-实验室</text>
+  <text x="40" y="380" fill="white" font-size="12">广州</text>
+  
+  <!-- 网络环境选择 -->
+  <circle cx="50" cy="405" r="6" fill="#16a085"/>
+  <circle cx="50" cy="405" r="3" fill="white"/>
+  <text x="70" y="410" fill="white" font-size="12">生产环境:内网</text>
+  
+  <circle cx="50" cy="425" r="6" fill="rgba(255,255,255,0.3)"/>
+  <text x="70" y="430" fill="white" font-size="12">开发环境:外网</text>
+  
+  <circle cx="50" cy="445" r="6" fill="rgba(255,255,255,0.3)"/>
+  <text x="70" y="450" fill="white" font-size="12">测试环境:内网</text>
+  
+  <!-- 登录按钮 -->
+  <rect x="50" y="470" width="200" height="35" fill="#16a085" rx="17"/>
+  <text x="150" y="490" text-anchor="middle" fill="white" font-size="14" font-weight="bold">登录</text>
+</svg>

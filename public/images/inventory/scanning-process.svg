@@ -1,0 +1,64 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- 顶部状态栏 -->
+  <text x="20" y="25" fill="white" font-size="12">12:08</text>
+  <text x="250" y="25" fill="white" font-size="12">📶📶🔋</text>
+  
+  <!-- 搜索图标 -->
+  <circle cx="30" cy="50" r="8" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="36" y1="56" x2="42" y2="62" stroke="white" stroke-width="2"/>
+  
+  <!-- 货位标题 LC-A-01 -->
+  <rect x="20" y="70" width="260" height="25" fill="rgba(255,255,255,0.2)" rx="4"/>
+  <text x="30" y="85" fill="white" font-size="12" font-weight="bold">货位：LC-A-01</text>
+  
+  <!-- 物料1 - 完成状态 -->
+  <rect x="20" y="100" width="260" height="45" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="4"/>
+  <text x="30" y="115" fill="white" font-size="11">人参皂苷F1</text>
+  <text x="30" y="128" fill="rgba(255,255,255,0.8)" font-size="9">批号:20231201 效期:2024-12-01</text>
+  <text x="30" y="140" fill="rgba(255,255,255,0.8)" font-size="9">货位:LC-A-01</text>
+  
+  <text x="220" y="115" fill="#27ae60" font-size="9">完成</text>
+  <text x="220" y="125" fill="#27ae60" font-size="9">盘点:0</text>
+  <text x="220" y="135" fill="#27ae60" font-size="9">目视:10</text>
+  <text x="250" y="125" fill="#27ae60" font-size="9">EAS:10</text>
+  
+  <!-- 确认开始盘点弹窗 -->
+  <rect x="40" y="160" width="220" height="120" fill="white" stroke="#34495e" stroke-width="2" rx="8"/>
+  <text x="150" y="185" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">确定要开始盘点吗?</text>
+  
+  <text x="50" y="205" fill="#2c3e50" font-size="11">点击确定，将开始本次盘点。</text>
+  <text x="50" y="220" fill="#2c3e50" font-size="11">请使用设备的扳机按键进行扫描。</text>
+  <text x="50" y="235" fill="#2c3e50" font-size="11">在完成盘点前，可以支持断点续盘。</text>
+  
+  <!-- 弹窗按钮 -->
+  <rect x="70" y="250" width="50" height="20" fill="#95a5a6" rx="10"/>
+  <text x="95" y="262" text-anchor="middle" fill="white" font-size="10">取消</text>
+  
+  <rect x="140" y="250" width="50" height="20" fill="#27ae60" rx="10"/>
+  <text x="165" y="262" text-anchor="middle" fill="white" font-size="10">确定</text>
+  
+  <!-- 物料2 - 待盘状态 -->
+  <rect x="20" y="290" width="260" height="45" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="4"/>
+  <text x="30" y="305" fill="white" font-size="11">人参皂苷F1</text>
+  <text x="30" y="318" fill="rgba(255,255,255,0.8)" font-size="9">批号:20230316 效期:2025-03-16</text>
+  <text x="30" y="330" fill="rgba(255,255,255,0.8)" font-size="9">货位:LC-A-02</text>
+  
+  <text x="220" y="305" fill="#27ae60" font-size="9">完成</text>
+  <text x="220" y="315" fill="#27ae60" font-size="9">盘点:0</text>
+  <text x="220" y="325" fill="#27ae60" font-size="9">目视:10</text>
+  <text x="250" y="315" fill="#27ae60" font-size="9">EAS:10</text>
+  
+  <!-- 底部按钮 -->
+  <rect x="20" y="345" width="260" height="20" fill="#27ae60" rx="10"/>
+  <text x="150" y="357" text-anchor="middle" fill="white" font-size="12" font-weight="bold">继续盘点，账面:70，盘点:70</text>
+</svg>

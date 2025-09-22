@@ -1,0 +1,35 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- 顶部状态栏 -->
+  <text x="20" y="25" fill="white" font-size="12">12:08</text>
+  <text x="250" y="25" fill="white" font-size="12">📶📶🔋</text>
+  
+  <!-- 标题和菜单按钮 -->
+  <text x="150" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">请选择库区</text>
+  <rect x="260" y="40" width="20" height="15" fill="rgba(255,255,255,0.3)" rx="2"/>
+  <line x1="265" y1="44" x2="275" y2="44" stroke="white" stroke-width="1"/>
+  <line x1="265" y1="47" x2="275" y2="47" stroke="white" stroke-width="1"/>
+  <line x1="265" y1="50" x2="275" y2="50" stroke="white" stroke-width="1"/>
+  
+  <!-- 库区选项1 -->
+  <rect x="20" y="90" width="260" height="50" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="115" fill="white" font-size="14">广州-冷藏库</text>
+  <path d="M 250 115 L 260 120 L 250 125 L 250 122 L 245 122 L 245 118 L 250 118 Z" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- 库区选项2 -->
+  <rect x="20" y="150" width="260" height="50" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="6"/>
+  <text x="30" y="175" fill="white" font-size="14">广州-冷藏库II</text>
+  <path d="M 250 175 L 260 180 L 250 185 L 250 182 L 245 182 L 245 178 L 250 178 Z" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- 空白区域 -->
+  <rect x="20" y="210" width="260" height="180" fill="rgba(0,0,0,0.1)" rx="6"/>
+</svg>
