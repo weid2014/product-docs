@@ -2,7 +2,19 @@
   <main class="content">
     <div v-if="product" class="content-wrapper">
       <div class="content-header">
-        <h2>{{ product.name }}功能说明</h2>
+        <div class="title-section">
+          <h2>{{ product.name }}功能说明</h2>
+          <div v-if="product.tags" class="product-tags">
+            <span 
+              v-for="(tag, index) in product.tags" 
+              :key="tag"
+              class="tag"
+              :style="{ backgroundColor: getTagColor(index) }"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </div>
         <p class="product-desc">{{ product.fullDescription }}</p>
         
         <!-- 历史版本更新内容 -->
@@ -110,6 +122,24 @@ const toggleVersionHistory = () => {
   showVersionHistory.value = !showVersionHistory.value
 }
 
+// 预定义的标签颜色数组
+const tagColors = [
+  '#87CEEB', // 天蓝色
+  '#FFB6C1', // 浅粉色
+  '#98FB98', // 浅绿色
+  '#DDA0DD', // 紫色
+  '#F0E68C', // 卡其色
+  '#FFA07A', // 浅橙色
+  '#20B2AA', // 浅海绿
+  '#FFE4B5', // 桃色
+  '#B0E0E6', // 粉蓝色
+  '#F5DEB3'  // 小麦色
+]
+
+const getTagColor = (index) => {
+  return tagColors[index % tagColors.length]
+}
+
 // 当产品切换时重置展开状态
 watch(() => props.product, () => {
   expandedFeatures.value = {}
@@ -137,10 +167,41 @@ watch(() => props.product, () => {
   border-bottom: 2px solid #f0f0f0;
 }
 
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
 .content-header h2 {
   color: #333;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin: 0;
+}
+
+.product-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .product-desc {
