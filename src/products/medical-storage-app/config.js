@@ -4,6 +4,49 @@ export const medicalStorageConfig = {
   version: '1.0.20250915',
   description: '医院智能物料管理应用，支持RFID和二维码领用、盘点功能',
   fullDescription: '医智储APP是专为医院物料管理设计的移动应用程序，支持PDA7100设备，提供RFID和二维码双模式领用、智能盘点管理等功能。',
+  versionHistory: [
+    {
+      version: '1.0.20250915',
+      date: '2024-09-15',
+      changes: [
+        '正式版发布，全面支持PDA7100设备',
+        '实现RFID和二维码双模式领用功能',
+        '新增智能盘点管理系统',
+        '优化用户界面，提升操作体验',
+        '增加实时库存同步功能'
+      ]
+    },
+    {
+      version: '0.9.8',
+      date: '2024-08-20',
+      changes: [
+        'Beta版本优化，修复已知问题',
+        '完善RFID感应功能',
+        '优化二维码扫描算法',
+        '增加操作记录追踪功能'
+      ]
+    },
+    {
+      version: '0.8.5',
+      date: '2024-07-10',
+      changes: [
+        '内测版本发布',
+        '基础RFID和二维码功能实现',
+        '完成PDA7100设备集成',
+        '实现基本的物料管理功能'
+      ]
+    },
+    {
+      version: '0.7.0',
+      date: '2024-06-01',
+      changes: [
+        '原型版本开发完成',
+        '核心架构设计实现',
+        '基础UI界面开发',
+        '设备驱动程序集成'
+      ]
+    }
+  ],
   category: 'APP软件',
   platform: ['Android'],
   minVersion: {

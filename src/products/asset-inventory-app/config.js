@@ -4,6 +4,39 @@ export const assetInventoryConfig = {
   version: '1.0.0',
   description: '金域医学资产设备盘点管理应用',
   fullDescription: '资产盘点设备APP是专为医院和实验室设计的固定资产RFID盘点系统，支持科室选择、资产设备管理、RFID扫描盘点等功能。',
+  versionHistory: [
+    {
+      version: '1.0.0',
+      date: '2024-08-26',
+      changes: [
+        '首次发布，支持固定资产RFID盘点',
+        '实现科室选择和资产管理功能',
+        '支持UHF RFID 860-960MHz频段',
+        '集成云平台数据同步功能',
+        '提供断点续盘支持'
+      ]
+    },
+    {
+      version: '0.9.5',
+      date: '2024-08-10',
+      changes: [
+        'Beta版本发布，核心功能测试',
+        '优化RFID扫描性能',
+        '完善资产状态跟踪',
+        '增加盘点报告生成功能'
+      ]
+    },
+    {
+      version: '0.8.0',
+      date: '2024-07-25',
+      changes: [
+        '内测版本，基础功能实现',
+        '支持资产设备信息管理',
+        '实现基本的RFID识别功能',
+        '完成用户登录和权限控制'
+      ]
+    }
+  ],
   category: 'APP软件',
   platform: ['Android'],
   minVersion: {

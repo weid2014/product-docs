@@ -4,6 +4,51 @@ export const smartFridgeConfig = {
   version: '1.0.0',
   description: '智能冰箱管理应用',
   fullDescription: '智能冰箱APP是专为医疗机构设计的RFID物料管理系统，提供激活配置、物料盘点、库存管理、报表分析等功能，支持RFID、NFC和电子锁控制板等多种硬件设备。',
+  versionHistory: [
+    {
+      version: '1.0.0',
+      date: '2024-09-01',
+      changes: [
+        '首个正式版本发布',
+        '完整的激活配置流程实现',
+        '支持RFID、NFC和电子锁控制板',
+        '实现10轮自动盘点功能',
+        '集成BI报表分析系统',
+        '支持物料状态智能分类显示'
+      ]
+    },
+    {
+      version: '0.9.2',
+      date: '2024-08-15',
+      changes: [
+        'RC版本发布，功能基本完善',
+        '优化天线连接和功率设置',
+        '完善物料摆放说明功能',
+        '增加硬件兼容性测试'
+      ]
+    },
+    {
+      version: '0.8.0',
+      date: '2024-07-20',
+      changes: [
+        'Beta版本发布',
+        '实现核心RFID扫描功能',
+        '完成激活流程开发',
+        '增加基础报表功能',
+        '优化用户界面设计'
+      ]
+    },
+    {
+      version: '0.6.5',
+      date: '2024-06-10',
+      changes: [
+        'Alpha版本测试',
+        '基础架构搭建完成',
+        '硬件驱动集成',
+        '核心功能原型实现'
+      ]
+    }
+  ],
   category: 'APP软件',
   platform: ['Android', 'iOS'],
   minVersion: {

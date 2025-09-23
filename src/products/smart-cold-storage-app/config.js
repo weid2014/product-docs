@@ -4,6 +4,51 @@ export const smartColdStorageConfig = {
   version: '1.0.0',
   description: '智能冷库管理应用',
   fullDescription: '智能冷库APP是专为医疗机构设计的RFID物料管理系统，提供激活配置、物料盘点、库存管理、报表分析等功能，支持RFID自动识别和实时监控。',
+  versionHistory: [
+    {
+      version: '1.0.0',
+      date: '2024-09-05',
+      changes: [
+        '正式版本发布，支持大型冷库管理',
+        '实现多天线IP地址管理功能',
+        '完善激活配置和设备管理',
+        '支持10轮自动盘点系统',
+        '集成实时监控和报表分析',
+        '优化冷库环境下的RFID性能'
+      ]
+    },
+    {
+      version: '0.9.5',
+      date: '2024-08-18',
+      changes: [
+        'RC版本优化，提升稳定性',
+        '完善天线功率管理功能',
+        '优化大容量数据处理',
+        '增加冷库专用功能模块'
+      ]
+    },
+    {
+      version: '0.8.2',
+      date: '2024-07-25',
+      changes: [
+        'Beta版本发布',
+        '实现基础冷库管理功能',
+        '完成RFID扫描和识别',
+        '增加物料状态分类',
+        '优化低温环境适配'
+      ]
+    },
+    {
+      version: '0.7.0',
+      date: '2024-06-15',
+      changes: [
+        'Alpha版本开发',
+        '核心架构设计完成',
+        '基础UI界面实现',
+        '硬件驱动程序集成'
+      ]
+    }
+  ],
   category: 'APP软件',
   platform: ['Android', 'iOS'],
   minVersion: {

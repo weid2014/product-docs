@@ -4,6 +4,37 @@
       <div class="content-header">
         <h2>{{ product.name }}功能说明</h2>
         <p class="product-desc">{{ product.fullDescription }}</p>
+        
+        <!-- 历史版本更新内容 -->
+        <div v-if="product.versionHistory" class="version-history-section">
+          <div 
+            class="version-history-header"
+            @click="toggleVersionHistory"
+          >
+            <h3>历史版本更新内容</h3>
+            <span class="toggle-icon" :class="{ expanded: showVersionHistory }">
+              ▼
+            </span>
+          </div>
+          
+          <div v-show="showVersionHistory" class="version-history-content">
+            <div 
+              v-for="version in product.versionHistory" 
+              :key="version.version"
+              class="version-item"
+            >
+              <div class="version-header">
+                <span class="version-number">v{{ version.version }}</span>
+                <span class="version-date">{{ version.date }}</span>
+              </div>
+              <ul class="version-changes">
+                <li v-for="change in version.changes" :key="change">
+                  {{ change }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       
       <div class="features-list">
@@ -65,6 +96,7 @@ const props = defineProps({
 })
 
 const expandedFeatures = ref({})
+const showVersionHistory = ref(false)
 
 const toggleFeature = (index) => {
   expandedFeatures.value[index] = !expandedFeatures.value[index]
@@ -74,9 +106,14 @@ const collapseFeature = (index) => {
   expandedFeatures.value[index] = false
 }
 
+const toggleVersionHistory = () => {
+  showVersionHistory.value = !showVersionHistory.value
+}
+
 // 当产品切换时重置展开状态
 watch(() => props.product, () => {
   expandedFeatures.value = {}
+  showVersionHistory.value = false
 })
 </script>
 
@@ -224,5 +261,90 @@ watch(() => props.product, () => {
   justify-content: center;
   height: 100%;
   color: #999;
+}
+
+/* 版本历史样式 */
+.version-history-section {
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.version-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.version-history-header:hover {
+  background: #e9ecef;
+}
+
+.version-history-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.version-history-content {
+  padding: 0;
+  background: white;
+}
+
+.version-item {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.version-item:last-child {
+  border-bottom: none;
+}
+
+.version-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.version-number {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.version-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.version-changes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.version-changes li {
+  padding: 6px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.version-changes li:before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 </style>

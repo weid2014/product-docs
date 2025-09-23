@@ -4,6 +4,50 @@ export const kspdAppConfig = {
   version: '2.1.0',
   description: '金域KSPD移动应用',
   fullDescription: '金域KSPD APP是专为医院物料管理设计的移动应用程序，提供便捷的物料领用、库存管理等功能。',
+  versionHistory: [
+    {
+      version: '2.1.0',
+      date: '2024-09-15',
+      changes: [
+        '新增PDA设备扫码支持，兼容SUNMI L2S等专业设备',
+        '优化院内领用流程，支持批量物料选择',
+        '增强RFID扫描功能，提升识别准确率至99%以上',
+        '新增物料批号自动识别功能',
+        '优化用户界面，提升操作体验'
+      ]
+    },
+    {
+      version: '2.0.5',
+      date: '2024-07-20',
+      changes: [
+        '修复历史领用单查询偶现的崩溃问题',
+        '优化网络连接稳定性',
+        '增加作废单据的权限控制',
+        '改进搜索功能的响应速度'
+      ]
+    },
+    {
+      version: '2.0.0',
+      date: '2024-05-10',
+      changes: [
+        '全新UI设计，采用Material Design风格',
+        '重构核心架构，提升应用性能',
+        '新增BI报表功能，支持数据可视化',
+        '增加多级审批流程支持',
+        '优化离线模式，支持断网操作'
+      ]
+    },
+    {
+      version: '1.8.2',
+      date: '2024-03-15',
+      changes: [
+        '修复Android 14兼容性问题',
+        '优化扫码识别算法',
+        '增加操作日志记录功能',
+        '改进数据同步机制'
+      ]
+    }
+  ],
   category: 'APP软件',
   platform: ['iOS', 'Android'],
   minVersion: {
