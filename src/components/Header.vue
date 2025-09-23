@@ -21,6 +21,18 @@
           </span>
         </button>
       </nav>
+      
+      <div class="user-section">
+        <button 
+          v-if="currentUser === 'admin'" 
+          @click="handleAccountManagement" 
+          class="admin-btn"
+        >
+          账号管理
+        </button>
+        <span class="user-info">{{ currentUser }}</span>
+        <button @click="handleLogout" class="logout-btn">退出</button>
+      </div>
     </div>
   </header>
 </template>
@@ -29,10 +41,11 @@
 import { ref } from 'vue'
 
 const props = defineProps({
-  categories: Array
+  categories: Array,
+  currentUser: String
 })
 
-const emit = defineEmits(['category-change', 'category-toggle'])
+const emit = defineEmits(['category-change', 'category-toggle', 'logout', 'account-management'])
 
 const activeCategory = ref('APP软件')
 const collapsedCategories = ref([])
@@ -57,6 +70,16 @@ const toggleCategory = (category) => {
     category,
     collapsed: collapsedCategories.value.includes(category)
   })
+}
+
+const handleLogout = () => {
+  if (confirm('确定要退出登录吗？')) {
+    emit('logout')
+  }
+}
+
+const handleAccountManagement = () => {
+  emit('account-management')
 }
 </script>
 
@@ -164,5 +187,50 @@ const toggleCategory = (category) => {
 
 .nav-item:not(.collapsed) .collapse-icon {
   transform: rotate(0deg);
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.admin-btn {
+  background: rgba(255, 193, 7, 0.8);
+  border: 1px solid rgba(255, 193, 7, 0.9);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: rgba(255, 193, 7, 1);
+  border-color: rgba(255, 193, 7, 1);
 }
 </style>

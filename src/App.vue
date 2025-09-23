@@ -1,27 +1,55 @@
 <template>
   <div id="app">
-    <Header :categories="categories" @category-change="handleCategoryChange" @category-toggle="handleCategoryToggle" />
-    <div class="main-container">
-      <Sidebar 
-        :products="currentProducts" 
-        :activeProduct="activeProduct"
-        @product-change="handleProductChange" 
+    <!-- 登录页面 -->
+    <Login v-if="!isAuthenticated" @login-success="handleLoginSuccess" />
+    
+    <!-- 主应用界面 -->
+    <template v-else>
+      <Header 
+        :categories="categories" 
+        :currentUser="currentUser"
+        @category-change="handleCategoryChange" 
+        @category-toggle="handleCategoryToggle"
+        @logout="handleLogout"
+        @account-management="handleAccountManagement"
       />
-      <Content 
-        :product="activeProduct"
-        :features="currentFeatures"
+      <div class="main-container">
+        <Sidebar 
+          :products="currentProducts" 
+          :activeProduct="activeProduct"
+          @product-change="handleProductChange" 
+        />
+        <Content 
+          :product="activeProduct"
+          :features="currentFeatures"
+        />
+      </div>
+      
+      <!-- 账号管理弹窗 -->
+      <AccountManagement 
+        v-if="showAccountManagement" 
+        @close="showAccountManagement = false" 
       />
-    </div>
+    </template>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
 import Content from './components/Content.vue'
+import Login from './components/Login.vue'
+import AccountManagement from './components/AccountManagement.vue'
 import { productData } from './data/products.js'
+import { isLoggedIn, getCurrentUser, logout, extendLogin } from './utils/auth.js'
 
+// 认证状态
+const isAuthenticated = ref(false)
+const currentUser = ref('')
+const showAccountManagement = ref(false)
+
+// 应用状态
 const activeCategory = ref('APP软件')
 const activeProduct = ref(null)
 const collapsedCategories = ref([])
@@ -58,10 +86,61 @@ const handleCategoryToggle = (toggleData) => {
 
 const handleProductChange = (product) => {
   activeProduct.value = product
+  // 用户活动时延长登录时间
+  extendLogin()
+}
+
+// 认证相关方法
+const handleLoginSuccess = (user) => {
+  isAuthenticated.value = true
+  currentUser.value = user.username
+  // 初始化产品数据
+  activeProduct.value = currentProducts.value[0] || null
+}
+
+const handleLogout = () => {
+  logout()
+  isAuthenticated.value = false
+  currentUser.value = ''
+  activeProduct.value = null
+  showAccountManagement.value = false
+}
+
+const handleAccountManagement = () => {
+  showAccountManagement.value = true
+}
+
+// 检查认证状态
+const checkAuthStatus = () => {
+  if (isLoggedIn()) {
+    isAuthenticated.value = true
+    currentUser.value = getCurrentUser() || ''
+    activeProduct.value = currentProducts.value[0] || null
+  } else {
+    isAuthenticated.value = false
+    currentUser.value = ''
+  }
 }
 
 // 初始化
-activeProduct.value = currentProducts.value[0] || null
+onMounted(() => {
+  checkAuthStatus()
+})
+
+// 监听用户活动，延长登录时间
+const handleUserActivity = () => {
+  if (isAuthenticated.value) {
+    extendLogin()
+  }
+}
+
+// 添加用户活动监听
+onMounted(() => {
+  const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click']
+  events.forEach(event => {
+    document.addEventListener(event, handleUserActivity, { passive: true })
+  })
+})
 </script>
 
 <style>
