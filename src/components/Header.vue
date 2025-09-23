@@ -1,7 +1,10 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <h1 class="logo">产品说明文档</h1>
+      <div class="logo-section">
+        <img src="/images/company-logo.png" alt="易联捷" class="company-logo">
+        <h1 class="logo">易联捷产品说明文档</h1>
+      </div>
       <nav class="nav">
         <button 
           v-for="category in categories" 
@@ -75,9 +78,35 @@ const toggleCategory = (category) => {
   margin: 0 auto;
 }
 
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-logo {
+  height: 48px;
+  width: auto;
+  max-width: 80px;
+  flex-shrink: 0;
+  object-fit: contain;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+  filter: none;
+  transition: transform 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
 .logo {
   font-size: 20px;
   font-weight: bold;
+  margin: 0;
 }
 
 .nav {
