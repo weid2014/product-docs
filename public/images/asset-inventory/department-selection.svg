@@ -1,0 +1,72 @@
+<svg viewBox="0 0 300 533" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="533" fill="url(#bgGradient)"/>
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="300" height="25" fill="#7b68ee"/>
+  <text x="15" y="17" fill="white" font-size="10" font-family="Arial, sans-serif">8:26</text>
+  <g fill="white" font-size="10" font-family="Arial, sans-serif">
+    <text x="260" y="17">📶</text>
+    <text x="275" y="17">🔋</text>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="25" width="300" height="50" fill="#34495e"/>
+  <text x="150" y="55" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">请选择科室</text>
+  <text x="270" y="55" fill="white" font-size="16" font-family="Arial, sans-serif">☰</text>
+  
+  <!-- Department List -->
+  <g transform="translate(0,75)">
+    <!-- 中山大学附属第六医院检验科共建实验室 -->
+    <rect x="0" y="0" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="30" fill="white" font-size="12" font-family="Arial, sans-serif">中山大学附属第六医院检验科共建实验室</text>
+    <text x="270" y="30" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 三明美亚健康体检常规实验室 -->
+    <rect x="0" y="50" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="80" fill="white" font-size="12" font-family="Arial, sans-serif">三明美亚健康体检常规实验室</text>
+    <text x="270" y="80" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 三级客户组 -->
+    <rect x="0" y="100" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="130" fill="white" font-size="12" font-family="Arial, sans-serif">三级客户组</text>
+    <text x="270" y="130" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部A区 -->
+    <rect x="0" y="150" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="180" fill="white" font-size="12" font-family="Arial, sans-serif">业务部A区</text>
+    <text x="270" y="180" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部B1区 -->
+    <rect x="0" y="200" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="230" fill="white" font-size="12" font-family="Arial, sans-serif">业务部B1区</text>
+    <text x="270" y="230" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部B2区 -->
+    <rect x="0" y="250" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="280" fill="white" font-size="12" font-family="Arial, sans-serif">业务部B2区</text>
+    <text x="270" y="280" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部C1区 -->
+    <rect x="0" y="300" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="330" fill="white" font-size="12" font-family="Arial, sans-serif">业务部C1区</text>
+    <text x="270" y="330" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部C区 -->
+    <rect x="0" y="350" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="380" fill="white" font-size="12" font-family="Arial, sans-serif">业务部C区</text>
+    <text x="270" y="380" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+    
+    <!-- 业务部D1区 -->
+    <rect x="0" y="400" width="300" height="50" fill="#3c4858" stroke="#4a5568" stroke-width="1"/>
+    <text x="20" y="430" fill="white" font-size="12" font-family="Arial, sans-serif">业务部D1区</text>
+    <text x="270" y="430" fill="#bdc3c7" font-size="12" font-family="Arial, sans-serif">></text>
+  </g>
+</svg>

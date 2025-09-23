@@ -3,6 +3,7 @@ import { smartColdStorageConfig } from '../products/smart-cold-storage-app/confi
 import { smartFridgeConfig } from '../products/smart-fridge-app/config.js'
 import { medicalStorageConfig } from '../products/medical-storage-app/config.js'
 import { inventoryAppConfig } from '../products/inventory-app/config.js'
+import { assetInventoryConfig } from '../products/asset-inventory-app/config.js'
 import { officeSuiteConfig } from '../products/office-suite/config.js'
 import { cmsSystemConfig } from '../products/cms-system/config.js'
 
@@ -12,7 +13,8 @@ export const productData = {
     smartColdStorageConfig,
     smartFridgeConfig,
     medicalStorageConfig,
-    inventoryAppConfig
+    inventoryAppConfig,
+    assetInventoryConfig
   ],
   'PC软件': [
     officeSuiteConfig

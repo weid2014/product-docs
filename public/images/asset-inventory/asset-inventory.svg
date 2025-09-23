@@ -1,0 +1,81 @@
+<svg viewBox="0 0 300 533" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="533" fill="url(#bgGradient)"/>
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="300" height="25" fill="#7b68ee"/>
+  <text x="15" y="17" fill="white" font-size="10" font-family="Arial, sans-serif">8:42</text>
+  <g fill="white" font-size="10" font-family="Arial, sans-serif">
+    <text x="260" y="17">📶</text>
+    <text x="275" y="17">🔋</text>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="25" width="300" height="50" fill="#34495e"/>
+  <text x="150" y="45" fill="white" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">中山大学附属第六医院检验科共建实验室</text>
+  <text x="150" y="60" fill="#bdc3c7" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">设备盘点表 - 2025-09-22</text>
+  
+  <!-- Asset List -->
+  <g transform="translate(10,85)">
+    <!-- 荧光定量仪 -->
+    <rect x="0" y="0" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="15" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">荧光定量仪</text>
+    <text x="250" y="15" fill="#e74c3c" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="30" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:Qubit 4</text>
+    <text x="10" y="42" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.008.003.001.009-10010</text>
+    <text x="10" y="54" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:2322624100335</text>
+    
+    <!-- 热盖金属浴 -->
+    <rect x="0" y="80" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="95" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">热盖金属浴</text>
+    <text x="250" y="95" fill="#e74c3c" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="110" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:JB-10HL</text>
+    <text x="10" y="122" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.015.001.010.004-05005</text>
+    <text x="10" y="134" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:048-14420-24110002</text>
+    
+    <!-- 热盖金属浴 -->
+    <rect x="0" y="160" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="175" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">热盖金属浴</text>
+    <text x="250" y="175" fill="#e74c3c" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="190" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:JB-10HL</text>
+    <text x="10" y="202" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.015.001.010.004-05006</text>
+    <text x="10" y="214" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:048-14420-24110001</text>
+    
+    <!-- 防火墙 -->
+    <rect x="0" y="240" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="255" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">防火墙</text>
+    <text x="250" y="255" fill="#e74c3c" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="270" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:SG-6000-C1300</text>
+    <text x="10" y="282" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.023.010.001.005-00001</text>
+    <text x="10" y="294" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:100973203100ICXM0G0001</text>
+    
+    <!-- 48通道纯化系统 -->
+    <rect x="0" y="320" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="335" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">48通道纯化系统</text>
+    <text x="250" y="335" fill="#e74c3c" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="350" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:NAP10</text>
+    <text x="10" y="362" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.008.009.022.002-10012</text>
+    <text x="10" y="374" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:NAP10-202407004</text>
+  </g>
+  
+  <!-- Bottom Navigation -->
+  <g transform="translate(0,480)">
+    <rect x="0" y="0" width="300" height="53" fill="#2c3e50"/>
+    <g transform="translate(40,15)">
+      <rect x="0" y="0" width="60" height="25" fill="#6c757d" rx="12"/>
+      <text x="30" y="16" fill="white" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">待盘</text>
+    </g>
+    <g transform="translate(120,15)">
+      <rect x="0" y="0" width="60" height="25" fill="#28a745" rx="12"/>
+      <text x="30" y="16" fill="white" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">完成</text>
+    </g>
+    <text x="250" y="30" fill="white" font-size="12" font-family="Arial, sans-serif">0 / 8</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg viewBox="0 0 300 533" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9370db;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="533" fill="url(#bgGradient)"/>
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="300" height="25" fill="#6a5acd"/>
+  <text x="15" y="17" fill="white" font-size="10" font-family="Arial, sans-serif">8:17</text>
+  <g fill="white" font-size="10" font-family="Arial, sans-serif">
+    <text x="260" y="17">📶</text>
+    <text x="275" y="17">🔋</text>
+  </g>
+  
+  <!-- Logo and Title -->
+  <g transform="translate(150,80)">
+    <polygon points="-15,-15 15,-15 0,15" fill="white"/>
+    <text x="0" y="35" fill="white" font-size="24" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">金域医学</text>
+    <text x="0" y="55" fill="white" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">KingMed Diagnostics</text>
+  </g>
+  
+  <!-- Input Fields -->
+  <g transform="translate(30,150)">
+    <!-- PDA编号 -->
+    <rect x="0" y="0" width="240" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="10" y="15" fill="#666" font-size="10" font-family="Arial, sans-serif">请输入PDA编号</text>
+    <text x="10" y="32" fill="#333" font-size="12" font-family="Arial, sans-serif">EA0000000000000019</text>
+    
+    <!-- PDA密码 -->
+    <rect x="0" y="50" width="240" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="10" y="65" fill="#666" font-size="10" font-family="Arial, sans-serif">请输入PDA密码</text>
+    <text x="10" y="82" fill="#333" font-size="12" font-family="Arial, sans-serif">请输入PDA密码</text>
+    
+    <!-- 子公司地区 -->
+    <rect x="0" y="100" width="240" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="10" y="115" fill="#666" font-size="10" font-family="Arial, sans-serif">请输入子公司地区</text>
+    <text x="10" y="132" fill="#333" font-size="12" font-family="Arial, sans-serif">福州</text>
+    
+    <!-- 科室查询条件 -->
+    <rect x="0" y="150" width="240" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="10" y="165" fill="#666" font-size="10" font-family="Arial, sans-serif">请输入科室查询条件</text>
+  </g>
+  
+  <!-- Environment Selection -->
+  <g transform="translate(30,320)">
+    <g>
+      <circle cx="10" cy="10" r="8" fill="white"/>
+      <circle cx="10" cy="10" r="5" fill="#7b68ee"/>
+      <text x="25" y="15" fill="white" font-size="12" font-family="Arial, sans-serif">生产环境:内网</text>
+    </g>
+    <g transform="translate(0,30)">
+      <circle cx="10" cy="10" r="8" fill="none" stroke="white" stroke-width="2"/>
+      <text x="25" y="15" fill="white" font-size="12" font-family="Arial, sans-serif">开发环境:外网</text>
+    </g>
+    <g transform="translate(0,60)">
+      <circle cx="10" cy="10" r="8" fill="none" stroke="white" stroke-width="2"/>
+      <text x="25" y="15" fill="white" font-size="12" font-family="Arial, sans-serif">测试环境:内网</text>
+    </g>
+  </g>
+  
+  <!-- Login Button -->
+  <g transform="translate(150,450)">
+    <rect x="-100" y="-20" width="200" height="40" fill="white" rx="20"/>
+    <text x="0" y="5" fill="#7b68ee" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">登录</text>
+  </g>
+</svg>

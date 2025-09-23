@@ -1,0 +1,61 @@
+<svg viewBox="0 0 300 533" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="533" fill="url(#bgGradient)"/>
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="300" height="25" fill="#7b68ee"/>
+  <text x="15" y="17" fill="white" font-size="10" font-family="Arial, sans-serif">8:42</text>
+  <g fill="white" font-size="10" font-family="Arial, sans-serif">
+    <text x="260" y="17">📶</text>
+    <text x="275" y="17">🔋</text>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="25" width="300" height="50" fill="#34495e"/>
+  <text x="150" y="45" fill="white" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">中山大学附属第六医院检验科共建实验室</text>
+  <text x="150" y="60" fill="#bdc3c7" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">设备盘点表 - 2025-09-22</text>
+  
+  <!-- Completion Dialog -->
+  <g transform="translate(150,200)">
+    <rect x="-120" y="-60" width="240" height="120" fill="rgba(255,255,255,0.95)" rx="10"/>
+    <text x="0" y="-30" fill="#333" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">完成盘点</text>
+    <text x="0" y="-10" fill="#666" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">点击确定，将结束本次盘点，请至云平台查</text>
+    <text x="0" y="5" fill="#666" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">看盘点单。</text>
+    
+    <!-- Buttons -->
+    <g transform="translate(-60,30)">
+      <rect x="0" y="0" width="50" height="25" fill="#6c757d" rx="12"/>
+      <text x="25" y="16" fill="white" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">取消</text>
+    </g>
+    <g transform="translate(10,30)">
+      <rect x="0" y="0" width="50" height="25" fill="#28a745" rx="12"/>
+      <text x="25" y="16" fill="white" font-size="10" font-family="Arial, sans-serif" text-anchor="middle">确定</text>
+    </g>
+  </g>
+  
+  <!-- Asset List (Background) -->
+  <g transform="translate(10,85)" opacity="0.3">
+    <!-- 荧光定量仪 -->
+    <rect x="0" y="0" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="15" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">荧光定量仪</text>
+    <text x="250" y="15" fill="#28a745" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="30" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:Qubit 4</text>
+    <text x="10" y="42" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.008.003.001.009-10010</text>
+    <text x="10" y="54" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:2322624100335</text>
+    
+    <!-- 热盖金属浴 -->
+    <rect x="0" y="80" width="280" height="70" fill="#3c4858" stroke="#4a5568" stroke-width="1" rx="5"/>
+    <text x="10" y="95" fill="white" font-size="11" font-family="Arial, sans-serif" font-weight="bold">热盖金属浴</text>
+    <text x="250" y="95" fill="#28a745" font-size="10" font-family="Arial, sans-serif">待盘</text>
+    <text x="10" y="110" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">规格/型号:JB-10HL</text>
+    <text x="10" y="122" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">资产编码:03.015.001.010.004-05005</text>
+    <text x="10" y="134" fill="#bdc3c7" font-size="9" font-family="Arial, sans-serif">序列号:048-14420-24110002</text>
+  </g>
+</svg>
