@@ -62,6 +62,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
+import { getAccounts } from '../utils/auth.js'
 
 const emit = defineEmits(['login-success'])
 
@@ -87,17 +88,21 @@ const STORAGE_KEYS = {
 }
 
 // 初始化
-onMounted(() => {
-  loadAccounts()
+onMounted(async () => {
+  await loadAccounts()
   loadRememberedUser()
-  initializeDefaultAccounts()
 })
 
-// 加载账号列表
-const loadAccounts = () => {
-  const stored = localStorage.getItem(STORAGE_KEYS.ACCOUNTS)
-  if (stored) {
-    accounts.value = JSON.parse(stored)
+// 加载账号列表（支持云端同步）
+const loadAccounts = async () => {
+  try {
+    isLoading.value = true
+    accounts.value = await getAccounts()
+  } catch (error) {
+    console.error('加载账号失败:', error)
+    errorMessage.value = '加载账号数据失败，请刷新页面重试'
+  } finally {
+    isLoading.value = false
   }
 }
 
@@ -109,19 +114,6 @@ const loadRememberedUser = () => {
     loginForm.username = user.username
     loginForm.password = user.password
     loginForm.rememberMe = true
-  }
-}
-
-// 初始化默认账号
-const initializeDefaultAccounts = () => {
-  if (accounts.value.length === 0) {
-    const defaultAccounts = [
-      { username: 'admin', password: '123456' },
-      { username: 'demo', password: 'demo123' },
-      { username: 'test', password: 'test123' }
-    ]
-    accounts.value = defaultAccounts
-    saveAccounts()
   }
 }
 

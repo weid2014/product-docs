@@ -1,4 +1,5 @@
 // 认证工具函数
+import { cloudSync } from './cloudSync.js'
 
 const STORAGE_KEYS = {
   ACCOUNTS: 'product_docs_accounts',
@@ -68,4 +69,83 @@ export const extendLogin = () => {
   }
   
   return false
+}
+
+// 获取账号列表（支持云端同步）
+export const getAccounts = async () => {
+  // 先获取本地数据
+  const localStored = localStorage.getItem(STORAGE_KEYS.ACCOUNTS)
+  let localAccounts = []
+  
+  if (localStored) {
+    try {
+      localAccounts = JSON.parse(localStored)
+    } catch (error) {
+      console.error('解析本地账号数据失败:', error)
+      localAccounts = []
+    }
+  }
+  
+  // 如果本地没有数据，使用默认账号
+  if (localAccounts.length === 0) {
+    localAccounts = [
+      { username: 'admin', password: 'admin123' },
+      { username: 'demo', password: 'demo123' },
+      { username: 'test', password: 'test123' }
+    ]
+    localStorage.setItem(STORAGE_KEYS.ACCOUNTS, JSON.stringify(localAccounts))
+  }
+  
+  try {
+    // 尝试从云端获取数据进行合并
+    const cloudResult = await cloudSync.autoInitialize()
+    
+    if (cloudResult.success && cloudResult.accounts && Array.isArray(cloudResult.accounts)) {
+      // 智能合并：保留所有不重复的账号
+      const mergedAccounts = [...localAccounts]
+      const localUsernames = localAccounts.map(acc => acc.username)
+      
+      // 添加云端独有的账号
+      cloudResult.accounts.forEach(cloudAcc => {
+        if (!localUsernames.includes(cloudAcc.username)) {
+          mergedAccounts.push(cloudAcc)
+        } else {
+          // 如果用户名相同，更新密码（云端数据优先）
+          const localIndex = mergedAccounts.findIndex(acc => acc.username === cloudAcc.username)
+          if (localIndex !== -1) {
+            mergedAccounts[localIndex] = cloudAcc
+          }
+        }
+      })
+      
+      // 只有在合并后数据有变化时才保存和上传
+      if (JSON.stringify(mergedAccounts) !== JSON.stringify(localAccounts)) {
+        localStorage.setItem(STORAGE_KEYS.ACCOUNTS, JSON.stringify(mergedAccounts))
+        
+        // 如果合并后的数据比云端数据多，上传到云端
+        if (mergedAccounts.length > cloudResult.accounts.length) {
+          cloudSync.autoUpload(mergedAccounts)
+        }
+      }
+      
+      return mergedAccounts
+    }
+  } catch (error) {
+    console.warn('云端同步失败，使用本地数据:', error)
+  }
+  
+  // 如果云端同步失败或没有云端数据，返回本地数据
+  return localAccounts
+}
+
+// 保存账号列表（自动同步到云端）
+export const saveAccounts = async (accounts) => {
+  localStorage.setItem(STORAGE_KEYS.ACCOUNTS, JSON.stringify(accounts))
+  
+  // 自动上传到云端
+  try {
+    await cloudSync.autoUpload(accounts)
+  } catch (error) {
+    console.warn('自动上传到云端失败:', error)
+  }
 }
