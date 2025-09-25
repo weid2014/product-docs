@@ -89,9 +89,9 @@ export const getAccounts = async () => {
   // 如果本地没有数据，使用默认账号
   if (localAccounts.length === 0) {
     localAccounts = [
-      { username: 'admin', password: 'admin123' },
-      { username: 'demo', password: 'demo123' },
-      { username: 'test', password: 'test123' }
+      { username: 'admin', password: 'Jinghe233' },
+      { username: 'Jinghe', password: 'Jinghe123' },
+      { username: 'lineae', password: 'ylj2025' }
     ]
     localStorage.setItem(STORAGE_KEYS.ACCOUNTS, JSON.stringify(localAccounts))
   }
