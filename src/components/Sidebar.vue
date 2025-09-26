@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside v-if="activeCategory !== 'PC软件'" class="sidebar">
     <div class="sidebar-header">
       <h3>产品列表</h3>
     </div>
@@ -25,7 +25,8 @@
 <script setup>
 const props = defineProps({
   products: Array,
-  activeProduct: Object
+  activeProduct: Object,
+  activeCategory: String
 })
 
 const emit = defineEmits(['product-change'])

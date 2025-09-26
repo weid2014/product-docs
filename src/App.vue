@@ -17,6 +17,7 @@
         <Sidebar 
           :products="currentProducts" 
           :activeProduct="activeProduct"
+          :activeCategory="activeCategory"
           @product-change="handleProductChange" 
         />
         <Content 
@@ -155,7 +156,7 @@ onMounted(() => {
   display: flex;
   flex: 1;
   height: calc(100vh - 60px);
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   width: 100%;
 }

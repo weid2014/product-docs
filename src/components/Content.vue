@@ -3,9 +3,9 @@
     <div v-if="product" class="content-wrapper">
       <div v-if="product.name==='医智储PC软件'">
         <iframe 
-          src="/dist/index.html" 
+          src="/images/office-suite/index.html" 
           width="100%" 
-          height="600px" 
+          height="800px" 
           frameborder="0"
           title="Vue3 Application"
       ></iframe>
@@ -168,7 +168,6 @@ watch(() => props.product, () => {
 
 .content-wrapper {
   padding: 30px;
-  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
 }
