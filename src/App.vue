@@ -71,7 +71,6 @@ const handleCategoryChange = (category) => {
 
 const handleCategoryToggle = (toggleData) => {
   const { category, collapsed } = toggleData
-  console.log(`分类 ${category} ${collapsed ? '已折叠' : '已展开'}`)
   
   // 这里可以添加折叠逻辑，比如隐藏/显示对应的产品列表
   if (collapsed) {

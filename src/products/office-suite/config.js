@@ -52,7 +52,7 @@ export const officeSuiteConfig = {
     }
   ],
   category: 'PC软件',
-  tags: ['Windows PC', 'macOS', 'Linux'],
+  tags: ['Windows PC'],
   platform: ['Windows', 'macOS', 'Linux'],
   features: [
     {

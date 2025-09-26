@@ -1,6 +1,16 @@
 <template>
   <main class="content">
     <div v-if="product" class="content-wrapper">
+      <div v-if="product.name==='医智储PC软件'">
+        <iframe 
+          src="/dist/index.html" 
+          width="100%" 
+          height="600px" 
+          frameborder="0"
+          title="Vue3 Application"
+      ></iframe>
+      </div>
+      <div v-else>
       <div class="content-header">
         <div class="title-section">
           <h2>{{ product.name }}功能说明</h2>
@@ -50,6 +60,8 @@
       </div>
       
       <div class="features-list">
+      </div>
+      
         <div 
           v-for="(feature, index) in features" 
           :key="feature.id"
